@@ -36,7 +36,6 @@ include 'global/conexion.php';
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Habilidades</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#trabajos">Trabajos</a></li>
 
-
             </ul>
         </div>
     </nav>
@@ -45,42 +44,53 @@ include 'global/conexion.php';
         <!-- About-->
         <section class="resume-section" id="about">
             <div class="resume-section-content">
-                <h1 class="mb-0">
-                    <span class="text-primary">TETL</span>
-                    Servicios para tu hogar
+                <h2 class="mb-0">
+                    
+                    Ingresa los datos para ponernos en contacto contigo y ofrecerte una cotizacion <span class="text-primary">Gratis</span>
 
-
-                </h1>
+                </h2>
                 <div class="subheading mb-5">
                     Direccion
                     <a href="mailto:name@email.com">correo@email.com</a>
                 </div>
             </div>
-            <div class="container-fluid">
-                
-                    <div>
-                    <form action="POST">
-                        <h3>Correo</h3>
-                        <input type="text">
-                        <h3>Numero de contacto</h3>
-                        <input type="number">
-                        <h3>Archivo</h3>
-                        <input type="file">
-                    </form>
-                    </div>
-
-            </div>
 
     </div>
     </section>
-
-    <section class="resume-section" id="trabajos">
-        <div class="resume-section-content">
-            <h2 class="mb-5">Trabajos</h2>
-
-
-        </div>
+    <section class="resume-section" id="interests" ">
+    <div class="resume-section-content" style="width: 100%;">
+    <h2 class="mb-5">Contacto</h2><br>
+    <h3>Si desea obtener mayor informacion y cotizacion sobre algun proyecto
+                contactenos sin ningun costo y nosotros le hacemos un presupuesto  </h3>
+    </div>
+        <div class="resume-section-content" style="border-style: solid; width: 50%;">
+        <div>
+           
+                <form method="POST" enctype="multipart/form-data">
+                <h4>Nombre</h4>
+                <input type="text" name="nombre">
+                <h4>Correo</h4>
+                <input type="text" name="correo">
+                <h4>Numero de telefono</h4>
+                <input type="text" name="numero">
+                <div class="float-right">
+                <h4>Fotografia</h4>
+                <input type="file" name="imagen">
+                </div>
+                
+                </div>
+</div>
+                <div>
+                <input type="submit" name="guardar" class="btn btn-info" value="Enviar" style="position: absolute; right: auto; width: 100px;">
+                </div>
+                </form>
+                      <?php
+                      include "enviar.php";
+                      ?>
+      
+        
     </section>
+
     <section class="resume-section" id="interests" style="background-color:cadetblue;">
         <div class="resume-section-content">
             <h2 class="mb-5">Contacto</h2>
@@ -91,7 +101,6 @@ include 'global/conexion.php';
             </p>
             <h3>Si desea obtener mayor informacion y cotizacion sobre algun proyecto
                 contactenos sin ningun costo y nosotros le hacemos un presupuesto</h3>
-            
         </div>
     </section>
     <hr class="m-0" />
